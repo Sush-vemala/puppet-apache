@@ -3,3 +3,7 @@ apache1::install_ensure: 'present'
 apache1::install_name: 'apache2'
 apache1::config_ensure: 'file'
 apache1::config_path: '/etc/apache2/apache2.conf'
+apache1::service_ensure: 'running'
+apache1::service_enable: true
+apache1::service_name: 'apache2'
+
