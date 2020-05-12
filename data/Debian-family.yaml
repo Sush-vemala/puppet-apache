@@ -1,2 +1,3 @@
 ---
 apche1::install_name: 'apache2'
+apache1::config_path: '/etc/apache2/apache2.conf'
