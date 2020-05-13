@@ -2,3 +2,8 @@
 apache1::install_name: 'httpd'
 apache1::config_path: '/etc/httpd/httpd.conf'
 apache1::service_name: 'httpd'
+apache1::vhosts_dir: '/etc/httpd/conf.d'
+apache1::vhosts_owner: 'apache'
+apache1::vhosts_group: 'apache'
+#@apache1::vhosts_owner: 'www-data'
+#apache1::vhosts_group: 'www-data'

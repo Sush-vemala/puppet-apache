@@ -1,0 +1,9 @@
+<VirtualHost *:<%= $port %>>
+    ServerName <%= $subdomain %>.mylabserver.com
+    ServerAlias <%= $subdomain %>
+    <% if $admin =~ String[1] { -%>
+    ServerAdmin <%= $admin %>
+    <% } -%>
+    DocumentRoot <%= $docroot %>
+</VirtualHost>
+

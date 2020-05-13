@@ -6,4 +6,6 @@ apache1::config_path: '/etc/apache2/apache2.conf'
 apache1::service_ensure: 'running'
 apache1::service_enable: true
 apache1::service_name: 'apache2'
-
+apache1::vhosts_dir: '/etc/apache2/sites-available'
+apache1::vhosts_owner: 'www-data'
+apache1::vhosts_group: 'www-data'
